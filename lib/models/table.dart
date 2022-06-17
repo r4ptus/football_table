@@ -66,7 +66,7 @@ class Team {
     factory Team.fromJson(Map<String, dynamic> json) => Team(
         liga: json["Liga"],
         bezeichnung: json["Bezeichnung"],
-        gruppe: json["Gruppe"],
+        gruppe: json["Gruppe"] ?? "A",
         platz: json["Platz"],
         team: json["Team"],
         teamname: json["Teamname"],
